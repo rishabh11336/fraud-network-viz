@@ -1,0 +1,6 @@
+cidr,service
+172.224.0.0/16,iCloud Private Relay
+172.225.0.0/16,iCloud Private Relay
+104.28.0.0/15,iCloud Private Relay
+146.75.128.0/17,iCloud Private Relay
+198.147.64.0/18,Generic consumer relay
