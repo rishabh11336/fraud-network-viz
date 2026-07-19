@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
             {children}
           </main>
+          <Analytics />
         </div>
       </body>
     </html>
