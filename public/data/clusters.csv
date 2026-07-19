@@ -1,0 +1,588 @@
+account_id,cluster_id,cluster_size,confidence_tier,dominant_signal,linking_values
+A001394,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A002118,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A003871,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A004992,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A008904,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A012395,C00001,6,CERTAIN,email_alias,email_alias=tsmith@gmail.com; name=smith tyler
+A001661,C00002,3,CERTAIN,email_alias,email_alias=markjones@gmail.com; name=jones mark
+A005620,C00002,3,CERTAIN,email_alias,email_alias=markjones@gmail.com; name=jones mark
+A007178,C00002,3,CERTAIN,email_alias,email_alias=markjones@gmail.com; name=jones mark
+A005265,C00003,3,CERTAIN,email_alias,email_alias=kmyers@gmail.com; name=karen myers
+A006264,C00003,3,CERTAIN,email_alias,email_alias=kmyers@gmail.com; name=karen myers
+A013950,C00003,3,CERTAIN,email_alias,email_alias=kmyers@gmail.com; name=karen myers
+A000052,C00004,2,CERTAIN,email_alias,email_alias=christopherlyons@gmail.com; name=christopher lyons
+A014120,C00004,2,CERTAIN,email_alias,email_alias=christopherlyons@gmail.com; name=christopher lyons
+A000126,C00005,2,CERTAIN,email_alias,email_alias=christinethompson@gmail.com; name=christine thompson
+A002223,C00005,2,CERTAIN,email_alias,email_alias=christinethompson@gmail.com; name=christine thompson
+A000214,C00006,2,CERTAIN,email_alias,email_alias=cpalmer@gmail.com; name=christopher palmer
+A013671,C00006,2,CERTAIN,email_alias,email_alias=cpalmer@gmail.com; name=christopher palmer
+A000359,C00007,2,CERTAIN,email_alias,email_alias=anitajohnson@gmail.com; name=anita johnson
+A003215,C00007,2,CERTAIN,email_alias,email_alias=anitajohnson@gmail.com; name=anita johnson
+A000360,C00008,2,CERTAIN,email_alias,email_alias=swilliams@gmail.com; name=shelby williams
+A003495,C00008,2,CERTAIN,email_alias,email_alias=swilliams@gmail.com; name=shelby williams
+A000499,C00009,2,CERTAIN,email_alias,email_alias=shawnmoore@gmail.com; name=moore shawn
+A014757,C00009,2,CERTAIN,email_alias,email_alias=shawnmoore@gmail.com; name=moore shawn
+A000662,C00010,2,CERTAIN,email_alias,email_alias=stephanie_brown@gmail.com; name=brown stephanie
+A011002,C00010,2,CERTAIN,email_alias,email_alias=stephanie_brown@gmail.com; name=brown stephanie
+A000755,C00011,2,CERTAIN,email_alias,email_alias=shawn_jones@gmail.com; name=jones shawn
+A009958,C00011,2,CERTAIN,email_alias,email_alias=shawn_jones@gmail.com; name=jones shawn
+A001290,C00012,2,CERTAIN,email_alias,email_alias=joshuamiller@gmail.com; name=joshua miller
+A012118,C00012,2,CERTAIN,email_alias,email_alias=joshuamiller@gmail.com; name=joshua miller
+A001324,C00013,2,CERTAIN,email_alias,email_alias=sarahnichols@gmail.com; name=nichols sarah
+A010888,C00013,2,CERTAIN,email_alias,email_alias=sarahnichols@gmail.com; name=nichols sarah
+A001369,C00014,2,CERTAIN,email_alias,email_alias=wthompson@gmail.com; name=thompson william
+A003579,C00014,2,CERTAIN,email_alias,email_alias=wthompson@gmail.com; name=thompson william
+A001563,C00015,2,CERTAIN,email_alias,email_alias=maryjames@gmail.com; name=james mary
+A010950,C00015,2,CERTAIN,email_alias,email_alias=maryjames@gmail.com; name=james mary
+A001984,C00016,2,CERTAIN,email_alias,email_alias=patriciarice@gmail.com; name=patricia rice
+A011276,C00016,2,CERTAIN,email_alias,email_alias=patriciarice@gmail.com; name=patricia rice
+A002193,C00017,2,CERTAIN,email_alias,email_alias=david_rodriguez@gmail.com; name=david rodriguez
+A008561,C00017,2,CERTAIN,email_alias,email_alias=david_rodriguez@gmail.com; name=david rodriguez
+A002347,C00018,2,CERTAIN,email_alias,email_alias=jessicajohnston@gmail.com; name=jessica johnston
+A005174,C00018,2,CERTAIN,email_alias,email_alias=jessicajohnston@gmail.com; name=jessica johnston
+A002397,C00019,2,CERTAIN,email_alias,email_alias=sarahschmidt@gmail.com; name=sarah schmidt
+A010050,C00019,2,CERTAIN,email_alias,email_alias=sarahschmidt@gmail.com; name=sarah schmidt
+A002909,C00020,2,CERTAIN,email_alias,email_alias=jordan_baker@gmail.com; name=baker jordan
+A013026,C00020,2,CERTAIN,email_alias,email_alias=jordan_baker@gmail.com; name=baker jordan
+A003098,C00021,2,CERTAIN,email_alias,email_alias=williamrichards@gmail.com; name=richards william
+A010031,C00021,2,CERTAIN,email_alias,email_alias=williamrichards@gmail.com; name=richards william
+A003180,C00022,2,CERTAIN,email_alias,email_alias=jameshill@gmail.com; name=hill james
+A008580,C00022,2,CERTAIN,email_alias,email_alias=jameshill@gmail.com; name=hill james
+A003295,C00023,2,CERTAIN,email_alias,email_alias=sarahlopez@gmail.com; name=lopez sarah
+A006370,C00023,2,CERTAIN,email_alias,email_alias=sarahlopez@gmail.com; name=lopez sarah
+A003344,C00024,2,CERTAIN,email_alias,email_alias=tina_wallace@gmail.com; name=tina wallace
+A003457,C00024,2,CERTAIN,email_alias,email_alias=tina_wallace@gmail.com; name=tina wallace
+A003428,C00025,2,CERTAIN,email_alias,email_alias=david_wilson@gmail.com; name=david wilson
+A012382,C00025,2,CERTAIN,email_alias,email_alias=david_wilson@gmail.com; name=david wilson
+A003661,C00026,2,CERTAIN,email_alias,email_alias=michellesmith@gmail.com; name=michelle smith
+A006040,C00026,2,CERTAIN,email_alias,email_alias=michellesmith@gmail.com; name=michelle smith
+A003951,C00027,2,CERTAIN,email_alias,email_alias=jonathansmith@gmail.com; name=jonathan smith
+A006602,C00027,2,CERTAIN,email_alias,email_alias=jonathansmith@gmail.com; name=jonathan smith
+A004414,C00028,2,CERTAIN,email_alias,email_alias=josesmith@gmail.com; name=jose smith
+A013403,C00028,2,CERTAIN,email_alias,email_alias=josesmith@gmail.com; name=jose smith
+A004865,C00029,2,CERTAIN,email_alias,email_alias=scottsmith@gmail.com; name=scott smith
+A008809,C00029,2,CERTAIN,email_alias,email_alias=scottsmith@gmail.com; name=scott smith
+A005097,C00030,2,CERTAIN,email_alias,email_alias=roberttorres@gmail.com; name=robert torres
+A005316,C00030,2,CERTAIN,email_alias,email_alias=roberttorres@gmail.com; name=robert torres
+A005505,C00031,2,CERTAIN,email_alias,email_alias=amythomas@gmail.com; name=amy thomas
+A007860,C00031,2,CERTAIN,email_alias,email_alias=amythomas@gmail.com; name=amy thomas
+A005607,C00032,2,CERTAIN,email_alias,email_alias=thomas_paul@gmail.com; name=paul thomas
+A008779,C00032,2,CERTAIN,email_alias,email_alias=thomas_paul@gmail.com; name=paul thomas
+A006050,C00033,2,CERTAIN,email_alias,email_alias=derekwilliams@gmail.com; name=derek williams
+A009642,C00033,2,CERTAIN,email_alias,email_alias=derekwilliams@gmail.com; name=derek williams
+A006336,C00034,2,CERTAIN,email_alias,email_alias=shannonjones@gmail.com; name=jones shannon
+A013059,C00034,2,CERTAIN,email_alias,email_alias=shannonjones@gmail.com; name=jones shannon
+A006722,C00035,2,CERTAIN,email_alias,email_alias=jason_white@gmail.com; name=jason white
+A011068,C00035,2,CERTAIN,email_alias,email_alias=jason_white@gmail.com; name=jason white
+A006725,C00036,2,CERTAIN,email_alias,email_alias=christophermendez@gmail.com; name=christopher mendez
+A007859,C00036,2,CERTAIN,email_alias,email_alias=christophermendez@gmail.com; name=christopher mendez
+A006948,C00037,2,CERTAIN,email_alias,email_alias=rrodriguez@gmail.com; name=robert rodriguez
+A014321,C00037,2,CERTAIN,email_alias,email_alias=rrodriguez@gmail.com; name=robert rodriguez
+A007112,C00038,2,CERTAIN,email_alias,email_alias=jeffreymelton@gmail.com; name=jeffrey melton
+A008854,C00038,2,CERTAIN,email_alias,email_alias=jeffreymelton@gmail.com; name=jeffrey melton
+A007213,C00039,2,CERTAIN,email_alias,email_alias=kanderson@gmail.com; name=anderson kimberly
+A010572,C00039,2,CERTAIN,email_alias,email_alias=kanderson@gmail.com; name=anderson kimberly
+A007806,C00040,2,CERTAIN,email_alias,email_alias=kimberlyjohnson@gmail.com; name=johnson kimberly
+A013044,C00040,2,CERTAIN,email_alias,email_alias=kimberlyjohnson@gmail.com; name=johnson kimberly
+A007999,C00041,2,CERTAIN,email_alias,email_alias=jenniferwilliams@gmail.com; name=jennifer williams
+A012270,C00041,2,CERTAIN,email_alias,email_alias=jenniferwilliams@gmail.com; name=jennifer williams
+A008038,C00042,2,CERTAIN,email_alias,email_alias=richardhenderson@gmail.com; name=henderson richard
+A009565,C00042,2,CERTAIN,email_alias,email_alias=richardhenderson@gmail.com; name=henderson richard
+A008094,C00043,2,CERTAIN,email_alias,email_alias=ryansmith@gmail.com; name=ryan smith
+A011333,C00043,2,CERTAIN,email_alias,email_alias=ryansmith@gmail.com; name=ryan smith
+A008623,C00044,2,CERTAIN,email_alias,email_alias=eric_tucker@gmail.com; name=eric tucker
+A010821,C00044,2,CERTAIN,email_alias,email_alias=eric_tucker@gmail.com; name=eric tucker
+A009192,C00045,2,CERTAIN,email_alias,email_alias=johnwilliams@gmail.com; name=john williams
+A013600,C00045,2,CERTAIN,email_alias,email_alias=johnwilliams@gmail.com; name=john williams
+A009427,C00046,2,CERTAIN,email_alias,email_alias=christopherwhite@gmail.com; name=christopher white
+A013242,C00046,2,CERTAIN,email_alias,email_alias=christopherwhite@gmail.com; name=christopher white
+A011138,C00047,2,CERTAIN,email_alias,email_alias=anthonyross@gmail.com; name=anthony ross
+A012173,C00047,2,CERTAIN,email_alias,email_alias=anthonyross@gmail.com; name=anthony ross
+A012439,C00048,2,CERTAIN,email_alias,email_alias=rebeccawilliams@gmail.com; name=rebecca williams
+A013621,C00048,2,CERTAIN,email_alias,email_alias=rebeccawilliams@gmail.com; name=rebecca williams
+A013079,C00049,2,CERTAIN,email_alias,email_alias=ashleygreen@gmail.com; name=ashley green
+A014695,C00049,2,CERTAIN,email_alias,email_alias=ashleygreen@gmail.com; name=ashley green
+A013097,C00050,2,CERTAIN,email_alias,email_alias=drobinson@gmail.com; name=daniel robinson
+A014456,C00050,2,CERTAIN,email_alias,email_alias=drobinson@gmail.com; name=daniel robinson
+A001697,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A003576,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A004565,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A005942,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A009581,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A011735,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A012501,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A013095,C00051,8,CERTAIN,email_alias,email_alias=teresahodges@gmail.com; phone=7704458910
+A001308,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A002691,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A002938,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A007585,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A007784,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A008340,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A009291,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A011275,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A012022,C00052,9,CERTAIN,email_alias,device=d_220bd46d2ea158; email_alias=jamiejackson@gmail.com
+A001417,C00053,5,CERTAIN,email_alias,addr=4910 W MORRIS AVE 2C||36166; device=d_580557ca3f1297; email_alias=jperez@gmail.com
+A006605,C00053,5,CERTAIN,email_alias,addr=4910 W MORRIS AVE 2C||36166; device=d_580557ca3f1297; email_alias=jperez@gmail.com
+A009844,C00053,5,CERTAIN,email_alias,addr=4910 W MORRIS AVE 2C||36166; device=d_580557ca3f1297; email_alias=jperez@gmail.com
+A013359,C00053,5,CERTAIN,email_alias,addr=4910 W MORRIS AVE 2C||36166; device=d_580557ca3f1297; email_alias=jperez@gmail.com
+A013860,C00053,5,CERTAIN,email_alias,addr=4910 W MORRIS AVE 2C||36166; device=d_580557ca3f1297; email_alias=jperez@gmail.com
+A000150,C00054,4,CERTAIN,email_alias,email_alias=ajohnson@gmail.com; name=amanda johnson
+A008782,C00054,4,CERTAIN,email_alias,email_alias=ajohnson@gmail.com; name=amanda johnson
+A009241,C00054,4,CERTAIN,email_alias,email_alias=ajohnson@gmail.com; name=amanda johnson
+A011957,C00054,4,CERTAIN,email_alias,email_alias=ajohnson@gmail.com; name=amanda johnson
+A003352,C00055,3,CERTAIN,email_alias,email_alias=davidjones@gmail.com; name=david jones
+A004694,C00055,3,CERTAIN,email_alias,email_alias=davidjones@gmail.com; name=david jones
+A014866,C00055,3,CERTAIN,email_alias,email_alias=davidjones@gmail.com; name=david jones
+A000141,C00056,2,CERTAIN,email_alias,email_alias=williamsmith@gmail.com; name=smith william
+A007705,C00056,2,CERTAIN,email_alias,email_alias=williamsmith@gmail.com; name=smith william
+A001704,C00057,2,CERTAIN,email_alias,email_alias=michaelanderson@gmail.com; name=anderson michael
+A002810,C00057,2,CERTAIN,email_alias,email_alias=michaelanderson@gmail.com; name=anderson michael
+A003610,C00058,2,CERTAIN,email_alias,email_alias=lisaharris@gmail.com; name=harris lisa
+A011246,C00058,2,CERTAIN,email_alias,email_alias=lisaharris@gmail.com; name=harris lisa
+A004711,C00059,2,CERTAIN,email_alias,email_alias=christophermiller@gmail.com; name=christopher miller
+A007025,C00059,2,CERTAIN,email_alias,email_alias=christophermiller@gmail.com; name=christopher miller
+A004939,C00060,2,CERTAIN,email_alias,email_alias=robert_moore@gmail.com; name=moore robert
+A010666,C00060,2,CERTAIN,email_alias,email_alias=robert_moore@gmail.com; name=moore robert
+A014355,C00061,2,CERTAIN,email_alias,email_alias=elizabethdavis@gmail.com; name=davis elizabeth
+A014362,C00061,2,CERTAIN,email_alias,email_alias=elizabethdavis@gmail.com; name=davis elizabeth
+A003996,C00062,4,CERTAIN,email_alias,email_alias=jbrown@gmail.com; name=brown james
+A008628,C00062,4,CERTAIN,email_alias,email_alias=jbrown@gmail.com; name=brown james
+A012904,C00062,4,CERTAIN,email_alias,email_alias=jbrown@gmail.com; name=brown james
+A013789,C00062,4,CERTAIN,email_alias,email_alias=jbrown@gmail.com; name=brown james
+A006929,C00063,3,CERTAIN,email_alias,email_alias=christopher_smith@gmail.com; name=christopher smith
+A010249,C00063,3,CERTAIN,email_alias,email_alias=christopher_smith@gmail.com; name=christopher smith
+A012415,C00063,3,CERTAIN,email_alias,email_alias=christopher_smith@gmail.com; name=christopher smith
+A001419,C00064,2,CERTAIN,email_alias,email_alias=patriciajohnson@gmail.com; name=johnson patricia
+A010939,C00064,2,CERTAIN,email_alias,email_alias=patriciajohnson@gmail.com; name=johnson patricia
+A001967,C00065,2,CERTAIN,email_alias,email_alias=davidwright@gmail.com; name=david wright
+A014659,C00065,2,CERTAIN,email_alias,email_alias=davidwright@gmail.com; name=david wright
+A009154,C00066,2,CERTAIN,email_alias,email_alias=ssmith@gmail.com; name=sarah smith
+A011385,C00066,2,CERTAIN,email_alias,email_alias=ssmith@gmail.com; name=sarah smith
+A010271,C00067,2,CERTAIN,email_alias,email_alias=joseph_johnson@gmail.com; name=johnson joseph
+A014764,C00067,2,CERTAIN,email_alias,email_alias=joseph_johnson@gmail.com; name=johnson joseph
+A011633,C00068,2,CERTAIN,email_alias,email_alias=christopher_lee@gmail.com; name=christopher lee
+A014290,C00068,2,CERTAIN,email_alias,email_alias=christopher_lee@gmail.com; name=christopher lee
+A000977,C00069,2,CERTAIN,email_alias,email_alias=jamessmith@gmail.com; name=james smith
+A003855,C00069,2,CERTAIN,email_alias,email_alias=jamessmith@gmail.com; name=james smith
+A007921,C00070,2,CERTAIN,email_alias,email_alias=davidsmith@gmail.com; name=david smith
+A008217,C00070,2,CERTAIN,email_alias,email_alias=davidsmith@gmail.com; name=david smith
+A000965,C00071,4,CERTAIN,email_alias,email_alias=davidjohnson@gmail.com; name=david johnson
+A004762,C00071,4,CERTAIN,email_alias,email_alias=davidjohnson@gmail.com; name=david johnson
+A006604,C00071,4,CERTAIN,email_alias,email_alias=davidjohnson@gmail.com; name=david johnson
+A009112,C00071,4,CERTAIN,email_alias,email_alias=davidjohnson@gmail.com; name=david johnson
+A000329,C00072,3,CERTAIN,email_alias,device=d_803d539c5e05b4; email_alias=hjones@gmail.com
+A001089,C00072,3,CERTAIN,email_alias,device=d_803d539c5e05b4; email_alias=hjones@gmail.com
+A008713,C00072,3,CERTAIN,email_alias,device=d_803d539c5e05b4; email_alias=hjones@gmail.com
+A000317,C00073,5,CERTAIN,email_alias,email_alias=mjohnson@gmail.com
+A004634,C00073,5,CERTAIN,email_alias,email_alias=mjohnson@gmail.com
+A008662,C00073,5,CERTAIN,email_alias,email_alias=mjohnson@gmail.com
+A012937,C00073,5,CERTAIN,email_alias,email_alias=mjohnson@gmail.com
+A014115,C00073,5,CERTAIN,email_alias,email_alias=mjohnson@gmail.com
+A000366,C00074,4,CERTAIN,email_alias,email_alias=dgarcia@gmail.com
+A006292,C00074,4,CERTAIN,email_alias,email_alias=dgarcia@gmail.com
+A006328,C00074,4,CERTAIN,email_alias,email_alias=dgarcia@gmail.com
+A013858,C00074,4,CERTAIN,email_alias,email_alias=dgarcia@gmail.com
+A000396,C00075,4,CERTAIN,email_alias,email_alias=dmd@gmail.com
+A005864,C00075,4,CERTAIN,email_alias,email_alias=dmd@gmail.com
+A006925,C00075,4,CERTAIN,email_alias,email_alias=dmd@gmail.com
+A008514,C00075,4,CERTAIN,email_alias,email_alias=dmd@gmail.com
+A000639,C00076,4,CERTAIN,email_alias,email_alias=cthomas@gmail.com
+A006059,C00076,4,CERTAIN,email_alias,email_alias=cthomas@gmail.com
+A011433,C00076,4,CERTAIN,email_alias,email_alias=cthomas@gmail.com
+A011647,C00076,4,CERTAIN,email_alias,email_alias=cthomas@gmail.com
+A002519,C00077,4,CERTAIN,email_alias,email_alias=mmd@gmail.com
+A007000,C00077,4,CERTAIN,email_alias,email_alias=mmd@gmail.com
+A013672,C00077,4,CERTAIN,email_alias,email_alias=mmd@gmail.com
+A014965,C00077,4,CERTAIN,email_alias,email_alias=mmd@gmail.com
+A002598,C00078,4,CERTAIN,email_alias,email_alias=msmith@gmail.com
+A002830,C00078,4,CERTAIN,email_alias,email_alias=msmith@gmail.com
+A007165,C00078,4,CERTAIN,email_alias,email_alias=msmith@gmail.com
+A013696,C00078,4,CERTAIN,email_alias,email_alias=msmith@gmail.com
+A000161,C00079,3,CERTAIN,email_alias,email_alias=jhall@gmail.com
+A004210,C00079,3,CERTAIN,email_alias,email_alias=jhall@gmail.com
+A009046,C00079,3,CERTAIN,email_alias,email_alias=jhall@gmail.com
+A000626,C00080,3,CERTAIN,email_alias,email_alias=kmartinez@gmail.com
+A007264,C00080,3,CERTAIN,email_alias,email_alias=kmartinez@gmail.com
+A014027,C00080,3,CERTAIN,email_alias,email_alias=kmartinez@gmail.com
+A001256,C00081,3,CERTAIN,email_alias,email_alias=amartin@gmail.com
+A006275,C00081,3,CERTAIN,email_alias,email_alias=amartin@gmail.com
+A009294,C00081,3,CERTAIN,email_alias,email_alias=amartin@gmail.com
+A001594,C00082,3,CERTAIN,email_alias,email_alias=kjones@gmail.com
+A004133,C00082,3,CERTAIN,email_alias,email_alias=kjones@gmail.com
+A014923,C00082,3,CERTAIN,email_alias,email_alias=kjones@gmail.com
+A002022,C00083,3,CERTAIN,email_alias,email_alias=cbrown@gmail.com
+A010056,C00083,3,CERTAIN,email_alias,email_alias=cbrown@gmail.com
+A013585,C00083,3,CERTAIN,email_alias,email_alias=cbrown@gmail.com
+A002445,C00084,3,CERTAIN,email_alias,email_alias=kwilson@gmail.com
+A003663,C00084,3,CERTAIN,email_alias,email_alias=kwilson@gmail.com
+A013103,C00084,3,CERTAIN,email_alias,email_alias=kwilson@gmail.com
+A002742,C00085,3,CERTAIN,email_alias,email_alias=sjohnson@gmail.com
+A006936,C00085,3,CERTAIN,email_alias,email_alias=sjohnson@gmail.com
+A014821,C00085,3,CERTAIN,email_alias,email_alias=sjohnson@gmail.com
+A003553,C00086,3,CERTAIN,email_alias,email_alias=jlee@gmail.com
+A007577,C00086,3,CERTAIN,email_alias,email_alias=jlee@gmail.com
+A012312,C00086,3,CERTAIN,email_alias,email_alias=jlee@gmail.com
+A003618,C00087,3,CERTAIN,email_alias,email_alias=amoore@gmail.com
+A004182,C00087,3,CERTAIN,email_alias,email_alias=amoore@gmail.com
+A009340,C00087,3,CERTAIN,email_alias,email_alias=amoore@gmail.com
+A003892,C00088,3,CERTAIN,email_alias,email_alias=rjohnson@gmail.com
+A005685,C00088,3,CERTAIN,email_alias,email_alias=rjohnson@gmail.com
+A014872,C00088,3,CERTAIN,email_alias,email_alias=rjohnson@gmail.com
+A004188,C00089,3,CERTAIN,email_alias,email_alias=aclark@gmail.com
+A005845,C00089,3,CERTAIN,email_alias,email_alias=aclark@gmail.com
+A008078,C00089,3,CERTAIN,email_alias,email_alias=aclark@gmail.com
+A004208,C00090,3,CERTAIN,email_alias,email_alias=mhernandez@gmail.com
+A004374,C00090,3,CERTAIN,email_alias,email_alias=mhernandez@gmail.com
+A006649,C00090,3,CERTAIN,email_alias,email_alias=mhernandez@gmail.com
+A004625,C00091,3,CERTAIN,email_alias,email_alias=jking@gmail.com
+A004631,C00091,3,CERTAIN,email_alias,email_alias=jking@gmail.com
+A012303,C00091,3,CERTAIN,email_alias,email_alias=jking@gmail.com
+A004788,C00092,3,CERTAIN,email_alias,email_alias=cjohnson@gmail.com
+A007525,C00092,3,CERTAIN,email_alias,email_alias=cjohnson@gmail.com
+A008445,C00092,3,CERTAIN,email_alias,email_alias=cjohnson@gmail.com
+A005255,C00093,3,CERTAIN,email_alias,email_alias=rbrown@gmail.com
+A009382,C00093,3,CERTAIN,email_alias,email_alias=rbrown@gmail.com
+A010121,C00093,3,CERTAIN,email_alias,email_alias=rbrown@gmail.com
+A005344,C00094,3,CERTAIN,email_alias,email_alias=rwhite@gmail.com
+A006552,C00094,3,CERTAIN,email_alias,email_alias=rwhite@gmail.com
+A010057,C00094,3,CERTAIN,email_alias,email_alias=rwhite@gmail.com
+A005671,C00095,3,CERTAIN,email_alias,email_alias=adavis@gmail.com
+A007539,C00095,3,CERTAIN,email_alias,email_alias=adavis@gmail.com
+A011448,C00095,3,CERTAIN,email_alias,email_alias=adavis@gmail.com
+A005785,C00096,3,CERTAIN,email_alias,email_alias=aroberts@gmail.com
+A009220,C00096,3,CERTAIN,email_alias,email_alias=aroberts@gmail.com
+A009354,C00096,3,CERTAIN,email_alias,email_alias=aroberts@gmail.com
+A005972,C00097,3,CERTAIN,email_alias,email_alias=jrivera@gmail.com
+A009164,C00097,3,CERTAIN,email_alias,email_alias=jrivera@gmail.com
+A011747,C00097,3,CERTAIN,email_alias,email_alias=jrivera@gmail.com
+A006554,C00098,3,CERTAIN,email_alias,email_alias=jwade@gmail.com
+A007395,C00098,3,CERTAIN,email_alias,email_alias=jwade@gmail.com
+A014739,C00098,3,CERTAIN,email_alias,email_alias=jwade@gmail.com
+A007455,C00099,3,CERTAIN,email_alias,email_alias=jharris@gmail.com
+A012537,C00099,3,CERTAIN,email_alias,email_alias=jharris@gmail.com
+A013899,C00099,3,CERTAIN,email_alias,email_alias=jharris@gmail.com
+A007931,C00100,3,CERTAIN,email_alias,email_alias=arogers@gmail.com
+A008759,C00100,3,CERTAIN,email_alias,email_alias=arogers@gmail.com
+A013146,C00100,3,CERTAIN,email_alias,email_alias=arogers@gmail.com
+A008315,C00101,3,CERTAIN,email_alias,email_alias=jthompson@gmail.com
+A013488,C00101,3,CERTAIN,email_alias,email_alias=jthompson@gmail.com
+A014223,C00101,3,CERTAIN,email_alias,email_alias=jthompson@gmail.com
+A008679,C00102,3,CERTAIN,email_alias,email_alias=mbrown@gmail.com
+A009320,C00102,3,CERTAIN,email_alias,email_alias=mbrown@gmail.com
+A011681,C00102,3,CERTAIN,email_alias,email_alias=mbrown@gmail.com
+A000057,C00103,2,CERTAIN,email_alias,email_alias=njackson@gmail.com
+A014479,C00103,2,CERTAIN,email_alias,email_alias=njackson@gmail.com
+A000065,C00104,2,CERTAIN,email_alias,email_alias=mwells@gmail.com
+A005076,C00104,2,CERTAIN,email_alias,email_alias=mwells@gmail.com
+A000072,C00105,2,CERTAIN,email_alias,email_alias=jhill@gmail.com
+A003158,C00105,2,CERTAIN,email_alias,email_alias=jhill@gmail.com
+A000097,C00106,2,CERTAIN,email_alias,email_alias=nthomas@gmail.com
+A002657,C00106,2,CERTAIN,email_alias,email_alias=nthomas@gmail.com
+A000166,C00107,2,CERTAIN,email_alias,email_alias=chall@gmail.com
+A004048,C00107,2,CERTAIN,email_alias,email_alias=chall@gmail.com
+A000262,C00108,2,CERTAIN,email_alias,email_alias=jhernandez@gmail.com
+A009242,C00108,2,CERTAIN,email_alias,email_alias=jhernandez@gmail.com
+A000294,C00109,2,CERTAIN,email_alias,email_alias=jwoods@gmail.com
+A009073,C00109,2,CERTAIN,email_alias,email_alias=jwoods@gmail.com
+A000335,C00110,2,CERTAIN,email_alias,email_alias=kgray@gmail.com
+A006506,C00110,2,CERTAIN,email_alias,email_alias=kgray@gmail.com
+A000487,C00111,2,CERTAIN,email_alias,email_alias=rtaylor@gmail.com
+A002380,C00111,2,CERTAIN,email_alias,email_alias=rtaylor@gmail.com
+A000517,C00112,2,CERTAIN,email_alias,email_alias=swalker@gmail.com
+A007044,C00112,2,CERTAIN,email_alias,email_alias=swalker@gmail.com
+A000622,C00113,2,CERTAIN,email_alias,email_alias=jgomez@gmail.com
+A001398,C00113,2,CERTAIN,email_alias,email_alias=jgomez@gmail.com
+A000711,C00114,2,CERTAIN,email_alias,email_alias=rjr@gmail.com
+A010357,C00114,2,CERTAIN,email_alias,email_alias=rjr@gmail.com
+A000873,C00115,2,CERTAIN,email_alias,email_alias=rcarter@gmail.com
+A010312,C00115,2,CERTAIN,email_alias,email_alias=rcarter@gmail.com
+A000876,C00116,2,CERTAIN,email_alias,email_alias=sstewart@gmail.com
+A013415,C00116,2,CERTAIN,email_alias,email_alias=sstewart@gmail.com
+A001081,C00117,2,CERTAIN,email_alias,email_alias=cmd@gmail.com
+A013279,C00117,2,CERTAIN,email_alias,email_alias=cmd@gmail.com
+A001219,C00118,2,CERTAIN,email_alias,email_alias=kberry@gmail.com
+A009882,C00118,2,CERTAIN,email_alias,email_alias=kberry@gmail.com
+A001285,C00119,2,CERTAIN,email_alias,email_alias=mjackson@gmail.com
+A005559,C00119,2,CERTAIN,email_alias,email_alias=mjackson@gmail.com
+A001478,C00120,2,CERTAIN,email_alias,email_alias=kwilliamson@gmail.com
+A011781,C00120,2,CERTAIN,email_alias,email_alias=kwilliamson@gmail.com
+A001503,C00121,2,CERTAIN,email_alias,email_alias=scameron@gmail.com
+A008680,C00121,2,CERTAIN,email_alias,email_alias=scameron@gmail.com
+A001505,C00122,2,CERTAIN,email_alias,email_alias=mruiz@gmail.com
+A008376,C00122,2,CERTAIN,email_alias,email_alias=mruiz@gmail.com
+A001770,C00123,2,CERTAIN,email_alias,email_alias=jjackson@gmail.com
+A011354,C00123,2,CERTAIN,email_alias,email_alias=jjackson@gmail.com
+A001788,C00124,2,CERTAIN,email_alias,email_alias=rwilson@gmail.com
+A004997,C00124,2,CERTAIN,email_alias,email_alias=rwilson@gmail.com
+A001968,C00125,2,CERTAIN,email_alias,email_alias=williammd@gmail.com
+A011956,C00125,2,CERTAIN,email_alias,email_alias=williammd@gmail.com
+A002000,C00126,2,CERTAIN,email_alias,email_alias=kmorgan@gmail.com
+A003813,C00126,2,CERTAIN,email_alias,email_alias=kmorgan@gmail.com
+A002036,C00127,2,CERTAIN,email_alias,email_alias=kwhite@gmail.com
+A013702,C00127,2,CERTAIN,email_alias,email_alias=kwhite@gmail.com
+A002138,C00128,2,CERTAIN,email_alias,email_alias=jsmith@gmail.com
+A003082,C00128,2,CERTAIN,email_alias,email_alias=jsmith@gmail.com
+A002246,C00129,2,CERTAIN,email_alias,email_alias=jadams@gmail.com
+A004000,C00129,2,CERTAIN,email_alias,email_alias=jadams@gmail.com
+A002265,C00130,2,CERTAIN,email_alias,email_alias=spatterson@gmail.com
+A004892,C00130,2,CERTAIN,email_alias,email_alias=spatterson@gmail.com
+A002300,C00131,2,CERTAIN,email_alias,email_alias=jjohnson@gmail.com
+A004906,C00131,2,CERTAIN,email_alias,email_alias=jjohnson@gmail.com
+A002451,C00132,2,CERTAIN,email_alias,email_alias=sbaker@gmail.com
+A012308,C00132,2,CERTAIN,email_alias,email_alias=sbaker@gmail.com
+A002459,C00133,2,CERTAIN,email_alias,email_alias=jvasquez@gmail.com
+A006652,C00133,2,CERTAIN,email_alias,email_alias=jvasquez@gmail.com
+A002531,C00134,2,CERTAIN,email_alias,email_alias=aharris@gmail.com
+A011885,C00134,2,CERTAIN,email_alias,email_alias=aharris@gmail.com
+A002545,C00135,2,CERTAIN,email_alias,email_alias=jphillips@gmail.com
+A007995,C00135,2,CERTAIN,email_alias,email_alias=jphillips@gmail.com
+A002584,C00136,2,CERTAIN,email_alias,email_alias=mrogers@gmail.com
+A012117,C00136,2,CERTAIN,email_alias,email_alias=mrogers@gmail.com
+A002589,C00137,2,CERTAIN,email_alias,email_alias=jclark@gmail.com
+A012267,C00137,2,CERTAIN,email_alias,email_alias=jclark@gmail.com
+A002601,C00138,2,CERTAIN,email_alias,email_alias=msanchez@gmail.com
+A014871,C00138,2,CERTAIN,email_alias,email_alias=msanchez@gmail.com
+A002686,C00139,2,CERTAIN,email_alias,email_alias=jmoore@gmail.com
+A014139,C00139,2,CERTAIN,email_alias,email_alias=jmoore@gmail.com
+A003024,C00140,2,CERTAIN,email_alias,email_alias=bgonzales@gmail.com
+A014011,C00140,2,CERTAIN,email_alias,email_alias=bgonzales@gmail.com
+A003032,C00141,2,CERTAIN,email_alias,email_alias=mwright@gmail.com
+A010717,C00141,2,CERTAIN,email_alias,email_alias=mwright@gmail.com
+A003101,C00142,2,CERTAIN,email_alias,email_alias=aramirez@gmail.com
+A006902,C00142,2,CERTAIN,email_alias,email_alias=aramirez@gmail.com
+A003313,C00143,2,CERTAIN,email_alias,email_alias=lflores@gmail.com
+A011252,C00143,2,CERTAIN,email_alias,email_alias=lflores@gmail.com
+A003404,C00144,2,CERTAIN,email_alias,email_alias=jcoleman@gmail.com
+A009232,C00144,2,CERTAIN,email_alias,email_alias=jcoleman@gmail.com
+A003468,C00145,2,CERTAIN,email_alias,email_alias=hbutler@gmail.com
+A007729,C00145,2,CERTAIN,email_alias,email_alias=hbutler@gmail.com
+A003494,C00146,2,CERTAIN,email_alias,email_alias=esmith@gmail.com
+A006633,C00146,2,CERTAIN,email_alias,email_alias=esmith@gmail.com
+A003680,C00147,2,CERTAIN,email_alias,email_alias=slambert@gmail.com
+A004554,C00147,2,CERTAIN,email_alias,email_alias=slambert@gmail.com
+A003718,C00148,2,CERTAIN,email_alias,email_alias=sgonzalez@gmail.com
+A010726,C00148,2,CERTAIN,email_alias,email_alias=sgonzalez@gmail.com
+A003842,C00149,2,CERTAIN,email_alias,email_alias=cmartin@gmail.com
+A009717,C00149,2,CERTAIN,email_alias,email_alias=cmartin@gmail.com
+A003961,C00150,2,CERTAIN,email_alias,email_alias=rjackson@gmail.com
+A011133,C00150,2,CERTAIN,email_alias,email_alias=rjackson@gmail.com
+A004046,C00151,2,CERTAIN,email_alias,email_alias=cjones@gmail.com
+A004395,C00151,2,CERTAIN,email_alias,email_alias=cjones@gmail.com
+A004148,C00152,2,CERTAIN,email_alias,email_alias=clewis@gmail.com
+A009436,C00152,2,CERTAIN,email_alias,email_alias=clewis@gmail.com
+A004320,C00153,2,CERTAIN,email_alias,email_alias=sbrown@gmail.com
+A005453,C00153,2,CERTAIN,email_alias,email_alias=sbrown@gmail.com
+A004392,C00154,2,CERTAIN,email_alias,email_alias=bprice@gmail.com
+A014126,C00154,2,CERTAIN,email_alias,email_alias=bprice@gmail.com
+A004515,C00155,2,CERTAIN,email_alias,email_alias=rhale@gmail.com
+A013384,C00155,2,CERTAIN,email_alias,email_alias=rhale@gmail.com
+A004619,C00156,2,CERTAIN,email_alias,email_alias=sharris@gmail.com
+A012622,C00156,2,CERTAIN,email_alias,email_alias=sharris@gmail.com
+A004721,C00157,2,CERTAIN,email_alias,email_alias=mdiaz@gmail.com
+A011595,C00157,2,CERTAIN,email_alias,email_alias=mdiaz@gmail.com
+A004773,C00158,2,CERTAIN,email_alias,email_alias=bcarter@gmail.com
+A011206,C00158,2,CERTAIN,email_alias,email_alias=bcarter@gmail.com
+A004926,C00159,2,CERTAIN,email_alias,email_alias=mmurphy@gmail.com
+A009349,C00159,2,CERTAIN,email_alias,email_alias=mmurphy@gmail.com
+A004974,C00160,2,CERTAIN,email_alias,email_alias=jrogers@gmail.com
+A005815,C00160,2,CERTAIN,email_alias,email_alias=jrogers@gmail.com
+A004983,C00161,2,CERTAIN,email_alias,email_alias=ltaylor@gmail.com
+A011016,C00161,2,CERTAIN,email_alias,email_alias=ltaylor@gmail.com
+A005157,C00162,2,CERTAIN,email_alias,email_alias=bhernandez@gmail.com
+A012454,C00162,2,CERTAIN,email_alias,email_alias=bhernandez@gmail.com
+A005192,C00163,2,CERTAIN,email_alias,email_alias=jgarcia@gmail.com
+A012810,C00163,2,CERTAIN,email_alias,email_alias=jgarcia@gmail.com
+A005198,C00164,2,CERTAIN,email_alias,email_alias=jdvm@gmail.com
+A014761,C00164,2,CERTAIN,email_alias,email_alias=jdvm@gmail.com
+A005473,C00165,2,CERTAIN,email_alias,email_alias=mmiller@gmail.com
+A008368,C00165,2,CERTAIN,email_alias,email_alias=mmiller@gmail.com
+A005519,C00166,2,CERTAIN,email_alias,email_alias=jparker@gmail.com
+A008264,C00166,2,CERTAIN,email_alias,email_alias=jparker@gmail.com
+A005551,C00167,2,CERTAIN,email_alias,email_alias=cdavis@gmail.com
+A008492,C00167,2,CERTAIN,email_alias,email_alias=cdavis@gmail.com
+A005787,C00168,2,CERTAIN,email_alias,email_alias=arichardson@gmail.com
+A014397,C00168,2,CERTAIN,email_alias,email_alias=arichardson@gmail.com
+A005795,C00169,2,CERTAIN,email_alias,email_alias=jdiaz@gmail.com
+A005943,C00169,2,CERTAIN,email_alias,email_alias=jdiaz@gmail.com
+A005971,C00170,2,CERTAIN,email_alias,email_alias=djones@gmail.com
+A008497,C00170,2,CERTAIN,email_alias,email_alias=djones@gmail.com
+A006027,C00171,2,CERTAIN,email_alias,email_alias=sfreeman@gmail.com
+A014797,C00171,2,CERTAIN,email_alias,email_alias=sfreeman@gmail.com
+A006048,C00172,2,CERTAIN,email_alias,email_alias=jlopez@gmail.com
+A009564,C00172,2,CERTAIN,email_alias,email_alias=jlopez@gmail.com
+A006358,C00173,2,CERTAIN,email_alias,email_alias=sdaugherty@gmail.com
+A010464,C00173,2,CERTAIN,email_alias,email_alias=sdaugherty@gmail.com
+A006785,C00174,2,CERTAIN,email_alias,email_alias=mfrancis@gmail.com
+A013806,C00174,2,CERTAIN,email_alias,email_alias=mfrancis@gmail.com
+A006923,C00175,2,CERTAIN,email_alias,email_alias=dmitchell@gmail.com
+A013426,C00175,2,CERTAIN,email_alias,email_alias=dmitchell@gmail.com
+A007217,C00176,2,CERTAIN,email_alias,email_alias=mtaylor@gmail.com
+A008215,C00176,2,CERTAIN,email_alias,email_alias=mtaylor@gmail.com
+A007275,C00177,2,CERTAIN,email_alias,email_alias=cwood@gmail.com
+A014245,C00177,2,CERTAIN,email_alias,email_alias=cwood@gmail.com
+A007490,C00178,2,CERTAIN,email_alias,email_alias=rbarr@gmail.com
+A010499,C00178,2,CERTAIN,email_alias,email_alias=rbarr@gmail.com
+A007593,C00179,2,CERTAIN,email_alias,email_alias=mlawrence@gmail.com
+A008689,C00179,2,CERTAIN,email_alias,email_alias=mlawrence@gmail.com
+A007657,C00180,2,CERTAIN,email_alias,email_alias=aparker@gmail.com
+A008480,C00180,2,CERTAIN,email_alias,email_alias=aparker@gmail.com
+A007678,C00181,2,CERTAIN,email_alias,email_alias=tjones@gmail.com
+A009201,C00181,2,CERTAIN,email_alias,email_alias=tjones@gmail.com
+A007707,C00182,2,CERTAIN,email_alias,email_alias=sjackson@gmail.com
+A010665,C00182,2,CERTAIN,email_alias,email_alias=sjackson@gmail.com
+A007863,C00183,2,CERTAIN,email_alias,email_alias=scoleman@gmail.com
+A013787,C00183,2,CERTAIN,email_alias,email_alias=scoleman@gmail.com
+A008209,C00184,2,CERTAIN,email_alias,email_alias=dwilliams@gmail.com
+A009144,C00184,2,CERTAIN,email_alias,email_alias=dwilliams@gmail.com
+A008446,C00185,2,CERTAIN,email_alias,email_alias=marnold@gmail.com
+A014324,C00185,2,CERTAIN,email_alias,email_alias=marnold@gmail.com
+A008591,C00186,2,CERTAIN,email_alias,email_alias=tcooper@gmail.com
+A012618,C00186,2,CERTAIN,email_alias,email_alias=tcooper@gmail.com
+A009101,C00187,2,CERTAIN,email_alias,email_alias=dbrown@gmail.com
+A010968,C00187,2,CERTAIN,email_alias,email_alias=dbrown@gmail.com
+A009297,C00188,2,CERTAIN,email_alias,email_alias=mrsdvm@gmail.com
+A009298,C00188,2,CERTAIN,email_alias,email_alias=mrsdvm@gmail.com
+A009365,C00189,2,CERTAIN,email_alias,email_alias=lreynolds@gmail.com
+A014416,C00189,2,CERTAIN,email_alias,email_alias=lreynolds@gmail.com
+A009542,C00190,2,CERTAIN,email_alias,email_alias=slittle@gmail.com
+A010180,C00190,2,CERTAIN,email_alias,email_alias=slittle@gmail.com
+A009825,C00191,2,CERTAIN,email_alias,email_alias=mwhite@gmail.com
+A013339,C00191,2,CERTAIN,email_alias,email_alias=mwhite@gmail.com
+A009845,C00192,2,CERTAIN,email_alias,email_alias=dmartinez@gmail.com
+A011204,C00192,2,CERTAIN,email_alias,email_alias=dmartinez@gmail.com
+A009996,C00193,2,CERTAIN,email_alias,email_alias=eprice@gmail.com
+A012781,C00193,2,CERTAIN,email_alias,email_alias=eprice@gmail.com
+A010426,C00194,2,CERTAIN,email_alias,email_alias=dlee@gmail.com
+A012174,C00194,2,CERTAIN,email_alias,email_alias=dlee@gmail.com
+A010427,C00195,2,CERTAIN,email_alias,email_alias=aturner@gmail.com
+A012628,C00195,2,CERTAIN,email_alias,email_alias=aturner@gmail.com
+A010703,C00196,2,CERTAIN,email_alias,email_alias=ssingh@gmail.com
+A013757,C00196,2,CERTAIN,email_alias,email_alias=ssingh@gmail.com
+A011322,C00197,2,CERTAIN,email_alias,email_alias=jmorgan@gmail.com
+A014131,C00197,2,CERTAIN,email_alias,email_alias=jmorgan@gmail.com
+A011417,C00198,2,CERTAIN,email_alias,email_alias=tdavis@gmail.com
+A013703,C00198,2,CERTAIN,email_alias,email_alias=tdavis@gmail.com
+A011534,C00199,2,CERTAIN,email_alias,email_alias=jnguyen@gmail.com
+A012917,C00199,2,CERTAIN,email_alias,email_alias=jnguyen@gmail.com
+A011930,C00200,2,CERTAIN,email_alias,email_alias=amorris@gmail.com
+A013000,C00200,2,CERTAIN,email_alias,email_alias=amorris@gmail.com
+A012009,C00201,2,CERTAIN,email_alias,email_alias=mrsmd@gmail.com
+A013560,C00201,2,CERTAIN,email_alias,email_alias=mrsmd@gmail.com
+A012664,C00202,2,CERTAIN,email_alias,email_alias=rjones@gmail.com
+A013905,C00202,2,CERTAIN,email_alias,email_alias=rjones@gmail.com
+A012875,C00203,2,CERTAIN,email_alias,email_alias=bhill@gmail.com
+A014491,C00203,2,CERTAIN,email_alias,email_alias=bhill@gmail.com
+A014939,C00204,2,CERTAIN,email_alias,email_alias=mward@gmail.com
+A014970,C00204,2,CERTAIN,email_alias,email_alias=mward@gmail.com
+A000047,C00205,3,HIGH,device,addr=803 ANDERSON DR||15627; device=d_9cfdc4a98f2cae
+A004729,C00205,3,HIGH,device,addr=803 ANDERSON DR||15627; device=d_9cfdc4a98f2cae
+A006216,C00205,3,HIGH,device,addr=803 ANDERSON DR||15627; device=d_9cfdc4a98f2cae
+A000375,C00206,3,HIGH,device,addr=2958 RAMIREZ ST||87336; device=d_f5ae914169cb89
+A005508,C00206,3,HIGH,device,addr=2958 RAMIREZ ST||87336; device=d_f5ae914169cb89
+A012590,C00206,3,HIGH,device,addr=2958 RAMIREZ ST||87336; device=d_f5ae914169cb89
+A000418,C00207,3,HIGH,device,addr=8553 GALLEGOS PL|APT 6F|94849; device=d_d7f828d713e4bb
+A007288,C00207,3,HIGH,device,addr=8553 GALLEGOS PL|APT 6F|94849; device=d_d7f828d713e4bb
+A014988,C00207,3,HIGH,device,addr=8553 GALLEGOS PL|APT 6F|94849; device=d_d7f828d713e4bb
+A001339,C00208,3,HIGH,device,addr=3086 W RIHARDS LN||56323; device=d_6ff63ea18f216b
+A001621,C00208,3,HIGH,device,addr=3086 W RIHARDS LN||56323; device=d_6ff63ea18f216b
+A005644,C00208,3,HIGH,device,addr=3086 W RIHARDS LN||56323; device=d_6ff63ea18f216b
+A004905,C00209,3,HIGH,device,addr=7593 THOMAS ST||59648; device=d_ca34d0cb68c8f9
+A007068,C00209,3,HIGH,device,addr=7593 THOMAS ST||59648; device=d_ca34d0cb68c8f9
+A012301,C00209,3,HIGH,device,addr=7593 THOMAS ST||59648; device=d_ca34d0cb68c8f9
+A005050,C00210,3,HIGH,device,addr=4171 SW ANDERSON BLVD|APT 9B|70519; device=d_02224ee7aa0d15
+A013494,C00210,3,HIGH,device,addr=4171 SW ANDERSON BLVD|APT 9B|70519; device=d_02224ee7aa0d15
+A014592,C00210,3,HIGH,device,addr=4171 SW ANDERSON BLVD|APT 9B|70519; device=d_02224ee7aa0d15
+A006057,C00211,3,HIGH,device,addr=8744 HALE DR||35786; device=d_598d9ced970c04
+A012471,C00211,3,HIGH,device,addr=8744 HALE DR||35786; device=d_598d9ced970c04
+A012886,C00211,3,HIGH,device,addr=8744 HALE DR||35786; device=d_598d9ced970c04
+A006457,C00212,3,HIGH,device,addr=4707 W RD||82049; device=d_d906eb1b3da6d4
+A012063,C00212,3,HIGH,device,addr=4707 W RD||82049; device=d_d906eb1b3da6d4
+A012485,C00212,3,HIGH,device,addr=4707 W RD||82049; device=d_d906eb1b3da6d4
+A008246,C00213,3,HIGH,device,addr=5417 WALLACE DR||59377; device=d_8f958be7874bf2
+A012665,C00213,3,HIGH,device,addr=5417 WALLACE DR||59377; device=d_8f958be7874bf2
+A014609,C00213,3,HIGH,device,addr=5417 WALLACE DR||59377; device=d_8f958be7874bf2
+A009523,C00214,3,HIGH,device,addr=4106 HURST CT||27037; device=d_5c3880022fc8bf
+A010923,C00214,3,HIGH,device,addr=4106 HURST CT||27037; device=d_5c3880022fc8bf
+A011652,C00214,3,HIGH,device,addr=4106 HURST CT||27037; device=d_5c3880022fc8bf
+A000183,C00215,2,HIGH,device,addr=3126 JAMES BLVD||24317; device=d_c22116e19d40c8
+A010695,C00215,2,HIGH,device,addr=3126 JAMES BLVD||24317; device=d_c22116e19d40c8
+A000228,C00216,2,HIGH,device,addr=307 SW REYNLDS RD||25423; device=d_095da6e1ae2c55
+A008477,C00216,2,HIGH,device,addr=307 SW REYNLDS RD||25423; device=d_095da6e1ae2c55
+A000797,C00217,2,HIGH,device,addr=3419 LN PL||85159; device=d_2bd385ed61f4ab
+A014851,C00217,2,HIGH,device,addr=3419 LN PL||85159; device=d_2bd385ed61f4ab
+A000973,C00218,2,HIGH,device,addr=1067 WANG ST||51595; device=d_65ce2e7f67716e
+A006366,C00218,2,HIGH,device,addr=1067 WANG ST||51595; device=d_65ce2e7f67716e
+A001748,C00219,2,HIGH,device,addr=47 SW MCCORMICK BLVD|APT 31|16712; device=d_18611e2e70c047
+A009776,C00219,2,HIGH,device,addr=47 SW MCCORMICK BLVD|APT 31|16712; device=d_18611e2e70c047
+A002566,C00220,2,HIGH,device,addr=6574 EDWARDS LN||31464; device=d_700cff5d342746
+A013032,C00220,2,HIGH,device,addr=6574 EDWARDS LN||31464; device=d_700cff5d342746
+A002645,C00221,2,HIGH,device,addr=9322 JOHNSSON AVE|APT 8F|39249; device=d_af552e96a1a9c8
+A014086,C00221,2,HIGH,device,addr=9322 JOHNSSON AVE|APT 8F|39249; device=d_af552e96a1a9c8
+A002926,C00222,2,HIGH,device,addr=4507 LEE DR||23348; device=d_dda203e70d3ca9
+A013996,C00222,2,HIGH,device,addr=4507 LEE DR||23348; device=d_dda203e70d3ca9
+A003081,C00223,2,HIGH,device,addr=3147 JOMES BLVD||13387; device=d_47f513a5b96eb6
+A010394,C00223,2,HIGH,device,addr=3147 JOMES BLVD||13387; device=d_47f513a5b96eb6
+A003111,C00224,2,HIGH,device,addr=7422 GARCIA RD||75412; device=d_8a4254ae67746b
+A014748,C00224,2,HIGH,device,addr=7422 GARCIA RD||75412; device=d_8a4254ae67746b
+A003863,C00225,2,HIGH,device,addr=2495 BARNES ST||76549; device=d_a1a978a1e54662
+A013750,C00225,2,HIGH,device,addr=2495 BARNES ST||76549; device=d_a1a978a1e54662
+A004296,C00226,2,HIGH,device,addr=329 NW BLAIR CT||80695; device=d_1fc39f35d9337f
+A014276,C00226,2,HIGH,device,addr=329 NW BLAIR CT||80695; device=d_1fc39f35d9337f
+A004434,C00227,2,HIGH,device,addr=4758 HARVE Y LN||51953; device=d_9272c4ac67a61e
+A004662,C00227,2,HIGH,device,addr=4758 HARVE Y LN||51953; device=d_9272c4ac67a61e
+A004463,C00228,2,HIGH,device,addr=3220 JINES CT||30005; device=d_dc02b1c414884f
+A010817,C00228,2,HIGH,device,addr=3220 JINES CT||30005; device=d_dc02b1c414884f
+A005309,C00229,2,HIGH,device,addr=3733 BRYANT BLVD||19149; device=d_3e3b0790c3822a
+A014335,C00229,2,HIGH,device,addr=3733 BRYANT BLVD||19149; device=d_3e3b0790c3822a
+A006212,C00230,2,HIGH,device,addr=8792 BRYANT RD||14246; device=d_d472dc0c892f00
+A006757,C00230,2,HIGH,device,addr=8792 BRYANT RD||14246; device=d_d472dc0c892f00
+A007559,C00231,2,HIGH,device,addr=7194 S PARKS RD||35768; device=d_e324262a2592f5
+A012836,C00231,2,HIGH,device,addr=7194 S PARKS RD||35768; device=d_e324262a2592f5
+A008045,C00232,2,HIGH,device,addr=1966 SANDOVAL ST|APT 7A|67626; device=d_233cdf96e3273a
+A014581,C00232,2,HIGH,device,addr=1966 SANDOVAL ST|APT 7A|67626; device=d_233cdf96e3273a
+A009225,C00233,2,HIGH,device,addr=7339 HAMMOND DR||36684; device=d_bbd691d8853741
+A013163,C00233,2,HIGH,device,addr=7339 HAMMOND DR||36684; device=d_bbd691d8853741
+A002473,C00234,2,HIGH,name,device=d_fb890fa00456a2; name=m webb
+A003772,C00234,2,HIGH,name,device=d_fb890fa00456a2; name=m webb
+A000400,C00235,4,HIGH,card,addr=8089 GONZALEZ AVE STE 25||48473; card=453245|5529; device=d_295ba54d9fd88e
+A006697,C00235,4,HIGH,card,addr=8089 GONZALEZ AVE STE 25||48473; card=453245|5529; device=d_295ba54d9fd88e
+A012677,C00235,4,HIGH,card,addr=8089 GONZALEZ AVE STE 25||48473; card=453245|5529; device=d_295ba54d9fd88e
+A013373,C00235,4,HIGH,card,addr=8089 GONZALEZ AVE STE 25||48473; card=453245|5529; device=d_295ba54d9fd88e
+A004336,C00236,3,HIGH,card,addr=8089 GONZALEZ AVE SUITE 25||48473; card=453245|5529; device=d_e5dd6f0569994e
+A009781,C00236,3,HIGH,card,addr=8089 GONZALEZ AVE SUITE 25||48473; card=453245|5529; device=d_e5dd6f0569994e
+A014465,C00236,3,HIGH,card,addr=8089 GONZALEZ AVE SUITE 25||48473; card=453245|5529; device=d_e5dd6f0569994e
+A002999,C00237,3,HIGH,device,addr=6471 NW CAARTER PL|APT 7B|41072; device=d_213fe787145a14
+A003298,C00237,3,HIGH,device,addr=6471 NW CAARTER PL|APT 7B|41072; device=d_213fe787145a14
+A011255,C00237,3,HIGH,device,addr=6471 NW CAARTER PL|APT 7B|41072; device=d_213fe787145a14
+A007238,C00238,3,HIGH,device,addr=6471 NW CARTER PL|UNIT 7B|41072; device=d_1471121f2b5312
+A014282,C00238,3,HIGH,device,addr=6471 NW CARTER PL|UNIT 7B|41072; device=d_1471121f2b5312
+A014616,C00238,3,HIGH,device,addr=6471 NW CARTER PL|UNIT 7B|41072; device=d_1471121f2b5312
+A001007,C00239,3,HIGH,device,device=d_a228f85c4b9b04
+A003660,C00239,3,HIGH,device,device=d_a228f85c4b9b04
+A006405,C00239,3,HIGH,device,device=d_a228f85c4b9b04
+A002788,C00240,3,HIGH,device,device=d_2aebdd3105fc88
+A009795,C00240,3,HIGH,device,device=d_2aebdd3105fc88
+A014589,C00240,3,HIGH,device,device=d_2aebdd3105fc88
+A000011,C00241,2,HIGH,device,device=d_5938e6d453d742
+A002274,C00241,2,HIGH,device,device=d_5938e6d453d742
+A000421,C00242,2,HIGH,device,device=d_aa7c69f3f56887
+A005745,C00242,2,HIGH,device,device=d_aa7c69f3f56887
+A000424,C00243,2,HIGH,device,device=d_4cd54f881d57d5
+A013570,C00243,2,HIGH,device,device=d_4cd54f881d57d5
+A001206,C00244,2,HIGH,device,device=d_2812286034ec54
+A014959,C00244,2,HIGH,device,device=d_2812286034ec54
+A001484,C00245,2,HIGH,device,device=d_c52d7b5e40997a
+A014624,C00245,2,HIGH,device,device=d_c52d7b5e40997a
+A004594,C00246,2,HIGH,device,device=d_b574568365d771
+A006431,C00246,2,HIGH,device,device=d_b574568365d771
+A006696,C00247,2,HIGH,device,device=d_23d00302f827b1
+A009222,C00247,2,HIGH,device,device=d_23d00302f827b1
+A012514,C00248,2,HIGH,device,device=d_fa3cfce6f50d8c
+A012663,C00248,2,HIGH,device,device=d_fa3cfce6f50d8c
+A000649,C00249,2,MEDIUM,name,addr=2119 SPENCER DR|SUITE 3|74606; name=m willis
+A003094,C00249,2,MEDIUM,name,addr=2119 SPENCER DR|SUITE 3|74606; name=m willis
+A001889,C00250,2,MEDIUM,name,addr=2119 SPENCER DR APT 3||74606; name=mark willis
+A002114,C00250,2,MEDIUM,name,addr=2119 SPENCER DR APT 3||74606; name=mark willis
+A007066,C00251,2,MEDIUM,name,addr=2119 SPENCER DR STE 3||74606; name=mark willis
+A014247,C00251,2,MEDIUM,name,addr=2119 SPENCER DR STE 3||74606; name=mark willis
