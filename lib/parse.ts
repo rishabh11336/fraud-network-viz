@@ -84,6 +84,7 @@ export function buildGraph(
         size: n.cluster_size,
         confidence_tier: n.confidence_tier,
         dominant_signal: n.dominant_signal,
+        linking_values: n.linking_values,
         accounts: [],
       });
     }

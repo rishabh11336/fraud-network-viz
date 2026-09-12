@@ -27,6 +27,7 @@ export interface ClusterSummary {
   size: number;
   confidence_tier: ConfidenceTier;
   dominant_signal: DominantSignal;
+  linking_values: string;
   accounts: string[];
 }
 

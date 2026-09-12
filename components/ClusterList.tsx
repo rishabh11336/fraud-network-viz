@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import type { ClusterSummary, ConfidenceTier, DominantSignal } from "@/lib/types";
 import TierBadge from "./TierBadge";
 import SignalChip from "./SignalChip";
+import { linkingSnippet } from "@/lib/story";
 
 const TIERS: ConfidenceTier[] = ["CERTAIN", "HIGH", "MEDIUM"];
 const SIGNALS: DominantSignal[] = ["email_alias", "card", "device", "name"];
@@ -26,7 +27,8 @@ export default function ClusterList({ clusters, selectedId, onSelect }: Props) {
         const q = search.toLowerCase();
         return (
           c.cluster_id.toLowerCase().includes(q) ||
-          c.accounts.some((a) => a.toLowerCase().includes(q))
+          c.accounts.some((a) => a.toLowerCase().includes(q)) ||
+          (c.linking_values || "").toLowerCase().includes(q)
         );
       }
       return true;
@@ -92,6 +94,9 @@ export default function ClusterList({ clusters, selectedId, onSelect }: Props) {
               <span className="cluster-id">{c.cluster_id}</span>
               <span className="cluster-size">{c.size} accts</span>
             </div>
+            {c.linking_values && (
+              <div className="cluster-snippet">{linkingSnippet(c.linking_values)}</div>
+            )}
             <div className="cluster-item-footer">
               <TierBadge tier={c.confidence_tier} />
               <SignalChip signal={c.dominant_signal} />

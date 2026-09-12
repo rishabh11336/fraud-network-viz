@@ -2,6 +2,7 @@
 import { useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
 import type { GraphData, GraphNode, GraphLink } from "@/lib/types";
+import { SIGNAL_COLOR, primarySignalType, edgeTooltipHtml } from "@/lib/story";
 
 const TIER_COLOR: Record<string, string> = {
   CERTAIN: "#ff4d6d",
@@ -73,20 +74,6 @@ export default function GraphCanvas({
       .on("zoom", (event) => g.attr("transform", event.transform));
     svg.call(zoom as any);
 
-    // Arrow marker for directed edges (optional styling)
-    defs.append("marker")
-      .attr("id", "arrowhead")
-      .attr("viewBox", "0 -4 8 8")
-      .attr("refX", 18)
-      .attr("refY", 0)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-      .append("path")
-      .attr("d", "M0,-4L8,0L0,4")
-      .attr("fill", "#363c4e");
-
-    // Weight scale for edge thickness
     const weightExtent = d3.extent(visibleLinks, (l) => l.combined_weight) as [number, number];
     const strokeScale = d3.scaleLinear()
       .domain(weightExtent[0] !== undefined ? weightExtent : [0, 30])
@@ -104,9 +91,29 @@ export default function GraphCanvas({
       .selectAll("line")
       .data(visibleLinks)
       .join("line")
-      .attr("stroke", "#2a2f3d")
+      .attr("stroke", (d) => SIGNAL_COLOR[primarySignalType(d.signals)] ?? "#2a2f3d")
       .attr("stroke-width", (d) => strokeScale(d.combined_weight))
-      .attr("stroke-opacity", 0.8);
+      .attr("stroke-opacity", 0.75)
+      .style("cursor", "pointer")
+      .on("mouseover", function (event, d) {
+        d3.select(this).attr("stroke-opacity", 1).attr("stroke-width", strokeScale(d.combined_weight) + 1.5);
+        tooltip
+          .classed("visible", true)
+          .style("left", `${event.clientX + 14}px`)
+          .style("top", `${event.clientY - 10}px`)
+          .html(edgeTooltipHtml(d.signals, d.combined_weight));
+      })
+      .on("mousemove", function (event) {
+        tooltip
+          .style("left", `${event.clientX + 14}px`)
+          .style("top", `${event.clientY - 10}px`);
+      })
+      .on("mouseout", function (_, d) {
+        d3.select(this)
+          .attr("stroke-opacity", 0.75)
+          .attr("stroke-width", strokeScale(d.combined_weight));
+        tooltip.classed("visible", false);
+      });
 
     // Draw nodes
     const node = g.append("g")
@@ -295,6 +302,14 @@ export default function GraphCanvas({
             <div className="legend-title">Node size = cluster size</div>
           </>
         )}
+        <div className="divider" style={{ margin: "6px 0" }} />
+        <div className="legend-title">Edge color = signal</div>
+        {(["email_alias", "device", "name", "card"] as const).map((s) => (
+          <div key={s} className="legend-item">
+            <div className="legend-dot" style={{ background: SIGNAL_COLOR[s] }} />
+            {s.replace(/_/g, " ")}
+          </div>
+        ))}
       </div>
 
       {visibleNodes.length === 0 && (

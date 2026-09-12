@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import type { GraphData, GraphNode } from "@/lib/types";
 import ClusterList from "@/components/ClusterList";
 import DetailPanel from "@/components/DetailPanel";
+import { DEFAULT_EXPLORER_CLUSTER } from "@/lib/story";
 
 // Load the heavy D3 canvas only on the client
 const GraphCanvas = dynamic(() => import("@/components/GraphCanvas"), {
@@ -16,14 +17,19 @@ const GraphCanvas = dynamic(() => import("@/components/GraphCanvas"), {
   ),
 });
 
+function clusterFromUrl(searchParams: URLSearchParams): string | null {
+  if (searchParams.get("view") === "all") return null;
+  return searchParams.get("cluster") ?? DEFAULT_EXPLORER_CLUSTER;
+}
+
 function ExplorerInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
   const [graphData, setGraphData] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedClusterId, setSelectedClusterId] = useState<string | null>(
-    searchParams.get("cluster")
+  const [selectedClusterId, setSelectedClusterId] = useState<string | null>(() =>
+    clusterFromUrl(searchParams)
   );
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
 
@@ -36,22 +42,27 @@ function ExplorerInner() {
       });
   }, []);
 
+  useEffect(() => {
+    setSelectedClusterId(clusterFromUrl(searchParams));
+  }, [searchParams]);
+
+  const setClusterUrl = (id: string | null) => {
+    const url = id ? `/explorer?cluster=${id}` : "/explorer?view=all";
+    router.replace(url, { scroll: false });
+  };
+
   const handleSelectCluster = (id: string) => {
-    setSelectedClusterId((prev) => {
-      const next = prev === id ? null : id;
-      // update URL param for shareability
-      const url = next ? `/explorer?cluster=${next}` : "/explorer";
-      router.replace(url, { scroll: false });
-      return next;
-    });
+    const next = selectedClusterId === id ? null : id;
+    setSelectedClusterId(next);
     setSelectedNode(null);
+    setClusterUrl(next);
   };
 
   const handleNodeClick = (node: GraphNode) => {
     setSelectedNode(node);
     if (node.cluster_id !== selectedClusterId) {
       setSelectedClusterId(node.cluster_id);
-      router.replace(`/explorer?cluster=${node.cluster_id}`, { scroll: false });
+      setClusterUrl(node.cluster_id);
     }
   };
 
@@ -110,6 +121,7 @@ function ExplorerInner() {
                 onClick={() => handleSelectCluster(selectedClusterId)}
                 style={{
                   marginLeft: "auto",
+                  marginRight: 44,
                   padding: "3px 10px",
                   border: "1px solid var(--border)",
                   borderRadius: "var(--radius-sm)",
@@ -119,7 +131,7 @@ function ExplorerInner() {
                   cursor: "pointer",
                 }}
               >
-                ✕ Show all clusters
+                Show all clusters
               </button>
             </>
           ) : (
@@ -143,8 +155,10 @@ function ExplorerInner() {
       <div className="panel" style={{ borderTop: "none", borderRight: "none", borderBottom: "none" }}>
         <DetailPanel
           selectedNode={selectedNode}
+          selectedClusterId={selectedClusterId}
           graphData={graphData}
           onSelectAccount={handleSelectAccount}
+          onClearAccount={() => setSelectedNode(null)}
         />
       </div>
     </div>

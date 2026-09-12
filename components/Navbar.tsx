@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { DEFAULT_EXPLORER_CLUSTER } from "@/lib/story";
 
 export default function Navbar() {
   const path = usePathname();
@@ -14,7 +15,7 @@ export default function Navbar() {
         <Link href="/" className={`nav-link${path === "/" ? " active" : ""}`}>
           Overview
         </Link>
-        <Link href="/explorer" className={`nav-link${path === "/explorer" ? " active" : ""}`}>
+        <Link href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`} className={`nav-link${path === "/explorer" ? " active" : ""}`}>
           Explorer
         </Link>
       </div>

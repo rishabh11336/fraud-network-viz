@@ -3,21 +3,23 @@ import { parseClusters, parseEdges, buildGraph } from "@/lib/parse";
 import type { ConfidenceTier } from "@/lib/types";
 import fs from "fs";
 import path from "path";
-import TierBadge from "@/components/TierBadge";
 import SignalChip from "@/components/SignalChip";
 import ClustersTable from "@/components/ClustersTable";
+import FeaturedCases from "@/components/FeaturedCases";
+import { DEFAULT_EXPLORER_CLUSTER } from "@/lib/story";
 
 export const metadata = {
   title: "FraudNet — Signup Abuse Cluster Visualizer",
-  description: "Interactive network visualization of fraud clusters detected via entity linkage.",
+  description:
+    "15,008 unlabeled signups. 251 likely multi-account actors. Explore the clusters we would take to a merchant.",
 };
 
 async function getData() {
   const dataDir = path.join(process.cwd(), "public", "data");
   const clustersCsv = fs.readFileSync(path.join(dataDir, "clusters.csv"), "utf-8");
-  const edgesCsv    = fs.readFileSync(path.join(dataDir, "edges.csv"), "utf-8");
-  const clusters    = parseClusters(clustersCsv);
-  const edges       = parseEdges(edgesCsv);
+  const edgesCsv = fs.readFileSync(path.join(dataDir, "edges.csv"), "utf-8");
+  const clusters = parseClusters(clustersCsv);
+  const edges = parseEdges(edgesCsv);
   return buildGraph(clusters, edges);
 }
 
@@ -36,94 +38,142 @@ export default async function Home() {
     return acc;
   }, {} as Record<string, number>);
 
-  const topClusters = graph.clusters.slice(0, 10);
+  const largestRings = graph.clusters.slice(0, 8);
 
   return (
     <div style={{ flex: 1, overflowY: "auto" }}>
       <div className="landing">
-        {/* Hero */}
         <div className="landing-hero">
-          <div className="badge">
-            <span>🔗</span> Entity Linkage
-          </div>
-          <h1>Fraud Cluster Network</h1>
+          <div className="badge">Signup abuse · entity linkage</div>
+          <h1>15,008 unlabeled signups. 251 likely multi-account actors.</h1>
           <p>
-            Visual explorer for signup abuse clusters detected through multi-signal entity linkage.
-            Linked accounts share phone numbers, card details, device hashes, or normalized names.
+            A merchant handed over a snapshot with no labels — nobody said who
+            was abusive, or whether abuse existed at all. We linked accounts
+            only when a strong identity signal, or two weaker ones, said they
+            were the same person. Legitimate customers stay out of the graph.
           </p>
-          <Link href="/explorer" className="btn-primary">
-            Open Network Explorer →
+          <Link
+            href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`}
+            className="btn-primary"
+          >
+            Open the largest ring →
           </Link>
         </div>
 
-        {/* Stats */}
+        <ol className="funnel">
+          <li>
+            <span className="funnel-n">15,008</span>
+            <span className="funnel-l">signups in the snapshot</span>
+          </li>
+          <li>
+            <span className="funnel-n">keys</span>
+            <span className="funnel-l">every field collapsed to an identity</span>
+          </li>
+          <li>
+            <span className="funnel-n">{graph.links.length}</span>
+            <span className="funnel-l">pairs that cleared the gate</span>
+          </li>
+          <li>
+            <span className="funnel-n">{graph.clusters.length}</span>
+            <span className="funnel-l">clusters / {graph.nodes.length} linked accounts</span>
+          </li>
+        </ol>
+
         <div className="stat-grid">
           <div className="stat-card">
-            <div className="stat-label">Total Clusters</div>
-            <div className="stat-value">{graph.clusters.length}</div>
-            <div className="stat-sub">suspected actors</div>
+            <div className="stat-label">CERTAIN</div>
+            <div className="stat-value" style={{ color: "var(--certain)" }}>
+              {tierCounts.CERTAIN}
+            </div>
+            <div className="stat-sub">would take to a merchant</div>
           </div>
           <div className="stat-card">
-            <div className="stat-label">Linked Accounts</div>
-            <div className="stat-value">{graph.nodes.length}</div>
-            <div className="stat-sub">accounts in clusters</div>
+            <div className="stat-label">HIGH</div>
+            <div className="stat-value" style={{ color: "var(--high)" }}>
+              {tierCounts.HIGH}
+            </div>
+            <div className="stat-sub">strong, needs a second look</div>
           </div>
           <div className="stat-card">
-            <div className="stat-label">Edges</div>
-            <div className="stat-value">{graph.links.length}</div>
-            <div className="stat-sub">account links</div>
+            <div className="stat-label">MEDIUM</div>
+            <div className="stat-value" style={{ color: "var(--medium)" }}>
+              {tierCounts.MEDIUM}
+            </div>
+            <div className="stat-sub">corroborated, not proven</div>
           </div>
           <div className="stat-card">
-            <div className="stat-label">CERTAIN tier</div>
-            <div className="stat-value" style={{ color: "var(--certain)" }}>{tierCounts.CERTAIN}</div>
-            <div className="stat-sub">highest confidence</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-label">HIGH tier</div>
-            <div className="stat-value" style={{ color: "var(--high)" }}>{tierCounts.HIGH}</div>
-            <div className="stat-sub">strong confidence</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-label">MEDIUM tier</div>
-            <div className="stat-value" style={{ color: "var(--medium)" }}>{tierCounts.MEDIUM}</div>
-            <div className="stat-sub">moderate confidence</div>
+            <div className="stat-label">Left out</div>
+            <div className="stat-value">
+              {(15008 - graph.nodes.length).toLocaleString()}
+            </div>
+            <div className="stat-sub">singletons we refused to link</div>
           </div>
         </div>
 
-        {/* Signal breakdown */}
-        <div style={{ marginBottom: 32 }}>
-          <h2 style={{ marginBottom: 12 }}>Dominant Signals</h2>
+        <div style={{ marginBottom: 40 }}>
+          <h2 style={{ marginBottom: 8 }}>Three cases worth opening</h2>
+          <p style={{ marginBottom: 16, maxWidth: 640 }}>
+            Start here instead of the full graph. Each card is a real cluster
+            from this run.
+          </p>
+          <FeaturedCases clusters={graph.clusters} />
+        </div>
+
+        <div style={{ marginBottom: 40 }}>
+          <h2 style={{ marginBottom: 8 }}>What actually linked them</h2>
+          <p style={{ marginBottom: 14, maxWidth: 640 }}>
+            Most CERTAIN clusters are Gmail alias rings. Device hash and card
+            (BIN + last 4) are the interesting minority — rarer, and usually
+            the cases that are not just the same inbox.
+          </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-            {Object.entries(signalCounts).sort((a, b) => b[1] - a[1]).map(([sig, count]) => (
-              <div
-                key={sig}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 8,
-                  padding: "8px 14px",
-                  background: "var(--bg-elevated)",
-                  border: "1px solid var(--border)",
-                  borderRadius: "var(--radius-md)",
-                }}
-              >
-                <SignalChip signal={sig} />
-                <span style={{ fontWeight: 600, color: "var(--text-primary)" }}>{count}</span>
-                <span style={{ color: "var(--text-muted)", fontSize: "0.75rem" }}>clusters</span>
-              </div>
-            ))}
+            {Object.entries(signalCounts)
+              .sort((a, b) => b[1] - a[1])
+              .map(([sig, count]) => (
+                <div
+                  key={sig}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 8,
+                    padding: "8px 14px",
+                    background: "var(--bg-elevated)",
+                    border: "1px solid var(--border)",
+                    borderRadius: "var(--radius-md)",
+                  }}
+                >
+                  <SignalChip signal={sig} />
+                  <span style={{ fontWeight: 600, color: "var(--text-primary)" }}>
+                    {count}
+                  </span>
+                  <span style={{ color: "var(--text-muted)", fontSize: "0.75rem" }}>
+                    clusters
+                  </span>
+                </div>
+              ))}
           </div>
         </div>
 
-        {/* Top clusters table */}
         <div>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
-            <h2>Top Clusters by Confidence</h2>
-            <Link href="/explorer" style={{ fontSize: "0.8rem", color: "var(--accent)" }}>
-              View all in explorer →
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: 12,
+            }}
+          >
+            <h2>Largest rings</h2>
+            <Link href="/explorer?view=all" style={{ fontSize: "0.8rem", color: "var(--accent)" }}>
+              View all {graph.clusters.length} in explorer →
             </Link>
           </div>
-          <ClustersTable clusters={topClusters} />
+          <p style={{ marginBottom: 12, maxWidth: 640 }}>
+            Sorted by size among CERTAIN, then HIGH. That is not the same as
+            link weight — a two-account Gmail alias can score higher than a
+            nine-account ring.
+          </p>
+          <ClustersTable clusters={largestRings} />
         </div>
       </div>
     </div>

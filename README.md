@@ -10,8 +10,8 @@ This started as a data-science take-home. The brief was unsupervised entity link
 
 The production site is on Vercel. Open it, you get two screens:
 
-- **Overview** — how many clusters, how many linked accounts, how confident we are, and which signal did most of the work.
-- **Explorer** — the network itself. Click a cluster in the left list, or a node on the graph, and the right panel tells you *why* those accounts were glued together.
+- **Overview** — the finding in one line, a funnel from 15,008 signups to 251 clusters, and three cases to open first.
+- **Explorer** — opens on the largest ring, not the hairball. The right panel is a cluster brief; click a node for account edges.
 
 Current run on the deployed build:
 
