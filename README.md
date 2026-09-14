@@ -11,6 +11,7 @@ This started as a data-science take-home. The brief was unsupervised entity link
 The production site is on Vercel. Open it, you get two screens:
 
 - **Overview** — the finding in one line, a funnel from 15,008 signups to 251 clusters, and three cases to open first.
+- **Story** — an eight-step walkthrough of the method, told with small identity networks (not the 15k-row table). Collision hubs, the Gmail disguise ring, the address gate, the Cabrera case, and a split we refused to merge.
 - **Explorer** — opens on the largest ring, not the hairball. The right panel is a cluster brief; click a node for account edges.
 
 Current run on the deployed build:

@@ -15,9 +15,12 @@ export default function Navbar() {
         <Link href="/" className={`nav-link${path === "/" ? " active" : ""}`}>
           Overview
         </Link>
-        <Link href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`} className={`nav-link${path === "/explorer" ? " active" : ""}`}>
-          Explorer
-        </Link>
+          <Link href="/story" className={`nav-link${path === "/story" ? " active" : ""}`}>
+            Story
+          </Link>
+          <Link href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`} className={`nav-link${path === "/explorer" ? " active" : ""}`}>
+            Explorer
+          </Link>
       </div>
     </nav>
   );

@@ -430,6 +430,21 @@ p  { line-height: 1.6; color: var(--text-secondary); }
   box-shadow: 0 0 24px var(--accent-glow);
 }
 .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+.hero-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+.btn-ghost:hover { border-color: var(--border-light); color: var(--text-primary); }
 
 .funnel {
   display: grid;
@@ -550,6 +565,160 @@ p  { line-height: 1.6; color: var(--text-secondary); }
 @media (max-width: 720px) {
   .funnel { grid-template-columns: 1fr; }
   .landing { padding: 28px 16px; }
+}
+
+/* ─── Story walkthrough ─────────────────────────────────────── */
+.story-page {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.story-progress {
+  height: 3px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+.story-progress-bar {
+  height: 100%;
+  background: var(--accent);
+}
+.story-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 42%) 1fr;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+}
+.story-copy {
+  padding: 28px 28px 16px 32px;
+  overflow-y: auto;
+}
+.story-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.story-stepn { color: var(--text-muted); letter-spacing: 0.04em; }
+.story-copy h1 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.story-lede {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.story-copy p { margin-bottom: 10px; font-size: 0.88rem; }
+.story-takeaway {
+  margin: 16px 0 20px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--accent);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.story-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.story-btn {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.story-btn:hover:not(:disabled) { color: var(--text-primary); border-color: var(--border-light); }
+.story-btn:disabled { opacity: 0.35; cursor: default; }
+.story-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.story-btn.ghost { background: transparent; }
+.story-visual {
+  padding: 16px 20px 8px 8px;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+.story-net { width: 100%; min-width: 0; }
+.story-net-svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 460px;
+  display: block;
+}
+.story-acct-label { font-size: 9px; font-family: Inter, system-ui, sans-serif; }
+.story-token-label {
+  font-size: 9px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+}
+.story-sub { font-size: 8px; fill: #5a6175; font-family: Inter, system-ui, sans-serif; }
+.story-edge-label {
+  font-size: 9px;
+  fill: #e8eaf0;
+  font-family: Inter, system-ui, sans-serif;
+}
+.story-graph-caption {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 4px 8px 8px;
+  max-width: 52rem;
+}
+.story-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 0 8px 8px;
+}
+.story-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: lowercase;
+}
+.story-legend-item i {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.story-legend-item i.dash { border-radius: 0; height: 2px; width: 12px; }
+.story-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  padding: 8px 16px 16px;
+  margin: 0;
+}
+.story-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  background: var(--border-light);
+  padding: 0;
+}
+.story-dots button.active { background: var(--accent); width: 18px; }
+
+@media (max-width: 900px) {
+  .story-layout { grid-template-columns: 1fr; }
+  .story-copy { padding: 20px 18px 8px; }
+  .story-visual { padding: 0 8px 8px; }
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────────── */

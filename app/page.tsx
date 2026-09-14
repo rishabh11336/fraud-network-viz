@@ -52,12 +52,17 @@ export default async function Home() {
             only when a strong identity signal, or two weaker ones, said they
             were the same person. Legitimate customers stay out of the graph.
           </p>
-          <Link
-            href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`}
-            className="btn-primary"
-          >
-            Open the largest ring →
-          </Link>
+          <div className="hero-actions">
+            <Link href="/story" className="btn-primary">
+              Read the story →
+            </Link>
+            <Link
+              href={`/explorer?cluster=${DEFAULT_EXPLORER_CLUSTER}`}
+              className="btn-ghost"
+            >
+              Skip to the largest ring
+            </Link>
+          </div>
         </div>
 
         <ol className="funnel">
