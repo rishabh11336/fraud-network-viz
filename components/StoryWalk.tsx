@@ -40,42 +40,61 @@ export default function StoryWalk() {
       </div>
 
       <div className="story-layout">
-        <div className="story-copy">
-          <div className="story-kicker">
-            {scene.kicker}
-            <span className="story-stepn">
-              {step + 1} / {SCENES.length}
-            </span>
-          </div>
-          <h1>{scene.title}</h1>
-          <p className="story-lede">{scene.lede}</p>
-          {scene.body.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
-          <div className="story-takeaway">{scene.takeaway}</div>
+        <div className="story-rail">
+          <header className="story-header">
+            <div className="story-kicker">
+              {scene.kicker}
+              <span className="story-stepn">
+                {step + 1} / {SCENES.length}
+              </span>
+            </div>
+            <h1>{scene.title}</h1>
+          </header>
 
-          <div className="story-nav">
-            <button
-              className="story-btn"
-              onClick={() => go(step - 1)}
-              disabled={step === 0}
-            >
-              Previous
-            </button>
-            {step < SCENES.length - 1 ? (
-              <button className="story-btn primary" onClick={() => go(step + 1)}>
-                Next
+          <div className="story-copy">
+            <p className="story-lede">{scene.lede}</p>
+            {scene.body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+            <div className="story-takeaway">{scene.takeaway}</div>
+          </div>
+
+          <div className="story-footer">
+            <div className="story-nav">
+              <button
+                className="story-btn"
+                onClick={() => go(step - 1)}
+                disabled={step === 0}
+              >
+                Previous
               </button>
-            ) : (
-              <Link href="/explorer?cluster=C00052" className="story-btn primary">
-                Open Explorer
-              </Link>
-            )}
-            {scene.explorerHref && step < SCENES.length - 1 && (
-              <Link href={scene.explorerHref} className="story-btn ghost">
-                {scene.explorerLabel ?? "Open in Explorer"}
-              </Link>
-            )}
+              {step < SCENES.length - 1 ? (
+                <button className="story-btn primary" onClick={() => go(step + 1)}>
+                  Next
+                </button>
+              ) : (
+                <Link href="/explorer?cluster=C00052" className="story-btn primary">
+                  Open Explorer
+                </Link>
+              )}
+              {scene.explorerHref && step < SCENES.length - 1 && (
+                <Link href={scene.explorerHref} className="story-btn ghost">
+                  {scene.explorerLabel ?? "Open in Explorer"}
+                </Link>
+              )}
+            </div>
+            <ol className="story-dots">
+              {SCENES.map((s, i) => (
+                <li key={s.id}>
+                  <button
+                    className={i === step ? "active" : ""}
+                    onClick={() => go(i)}
+                    aria-label={`${s.kicker}: ${s.title}`}
+                    aria-current={i === step ? "step" : undefined}
+                  />
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
 
@@ -83,19 +102,6 @@ export default function StoryWalk() {
           <StoryNet scene={scene} />
         </div>
       </div>
-
-      <ol className="story-dots">
-        {SCENES.map((s, i) => (
-          <li key={s.id}>
-            <button
-              className={i === step ? "active" : ""}
-              onClick={() => go(i)}
-              aria-label={`${s.kicker}: ${s.title}`}
-              aria-current={i === step ? "step" : undefined}
-            />
-          </li>
-        ))}
-      </ol>
     </div>
   );
 }

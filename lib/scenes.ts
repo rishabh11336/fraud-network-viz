@@ -260,11 +260,11 @@ export const SCENES: Scene[] = [
     nodes: [
       { id: "card", kind: "card", label: "453245 · 5529", sub: "Medium · not enough", group: "center" },
       { id: "devA", kind: "device", label: "device A", group: "left" },
-      { id: "ste", kind: "address", label: "Gonzalez STE 25", group: "left" },
+      { id: "ste", kind: "address", label: "STE 25", group: "left" },
       { id: "l1", kind: "account", label: "Acct", group: "left" },
       { id: "l2", kind: "account", label: "Acct", group: "left" },
       { id: "devB", kind: "device", label: "device B", group: "right" },
-      { id: "suite", kind: "address", label: "Gonzalez SUITE 25", group: "right" },
+      { id: "suite", kind: "address", label: "SUITE 25", group: "right" },
       { id: "r1", kind: "account", label: "Acct", group: "right" },
       { id: "r2", kind: "account", label: "Acct", group: "right" },
     ],
